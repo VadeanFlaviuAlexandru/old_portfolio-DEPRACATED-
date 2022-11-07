@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import "./index.scss";
+
+body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5vh;
+    width: 100%;
+    height: 100%;
+    color: $dark;
+    background-color: $white;
+    box-sizing: border-box;
+    // overflow: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  @media only screen and (min-width: 940px) {
+    font-size: 3rem;
+    text-align: left;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  @media only screen and (min-width: 940px) {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+li {
+    color: $dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
