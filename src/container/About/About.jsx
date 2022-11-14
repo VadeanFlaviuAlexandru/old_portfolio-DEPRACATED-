@@ -14,6 +14,7 @@ export default class About extends Component {
                 </Box>
                 <Box>
                 </Box>
+                
             </Box>
         )
     }
