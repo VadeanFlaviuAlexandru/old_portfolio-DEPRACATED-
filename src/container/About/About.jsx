@@ -3,6 +3,8 @@ import { Box } from "@mui/material";
 import { info } from "../../info/info.js"
 import '../About/About.scss'
 
+
+
 export default class About extends Component {
     render() {
         return (
