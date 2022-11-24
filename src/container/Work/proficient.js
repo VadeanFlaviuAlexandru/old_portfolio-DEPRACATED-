@@ -1,23 +1,36 @@
 import { motion } from 'framer-motion';
-import Java from "../../assets/Java.png"
+import js from "../../assets/javascript.png"
+import bootstrap from "../../assets/bootstrap.png"
+import css from "../../assets/css.png"
+import react from "../../assets/react.png"
+import sass from "../../assets/sass.png"
+import html from "../../assets/html.png"
 
 const Example = () => {
   const replies = [
     {
       id: '1',
-      photo: Java,
-    },
-    {
-      id: '2',
-      photo: '🐱',
+      photo: html,
     },
     {
       id: '3',
-      photo: '🐰',
+      photo: css,
     },
     {
       id: '4',
-      photo: '🐭',
+      photo: js,
+    },
+    {
+      id: '5',
+      photo: sass,
+    },
+    {
+      id: '6',
+      photo: bootstrap,
+    },
+    {
+      id: '7',
+      photo: react,
     }
   ];
 
@@ -41,7 +54,6 @@ const Example = () => {
 
   return (
     <>
-      {/* <h4>Already {replies.length} furry friends liked this post!</h4> */}
       <motion.ul
         style={{
           display: 'flex',
@@ -72,7 +84,6 @@ const Example = () => {
           >
             <div
               style={{
-                background: 'linear-gradient(90deg,#ffa0ae 0%,#aacaef 75%)',
                 height: '50px',
                 width: '50px',
                 borderRadius: '50%',
@@ -84,7 +95,7 @@ const Example = () => {
                 fontSize: '38px',
               }}
             >
-              <img src={reply.photo} alt='language'/>
+              <img src={reply.photo} alt='language' className='skills-icon'/>
             </div>
           </motion.li>
         ))}

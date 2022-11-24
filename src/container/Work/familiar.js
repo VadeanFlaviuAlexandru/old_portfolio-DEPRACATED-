@@ -1,15 +1,37 @@
 import { motion } from 'framer-motion';
-import Java from "../../assets/Java.png"
+import angular from "../../assets/angular.png"
+import php from "../../assets/php.png"
+import java from "../../assets/Java.png"
+import net from "../../assets/net.png"
+import sql from "../../assets/sql.png"
+import firebase from "../../assets/firebase.png"
+
 
 const Example = () => {
   const replies = [
     {
       id: '1',
-      photo: Java,
+      photo: angular,
     },
     {
       id: '2',
-      photo: '🐱',
+      photo: php,
+    },
+    {
+      id: '3',
+      photo: net,
+    },
+    {
+      id: '4',
+      photo: sql,
+    },
+    {
+      id: '5',
+      photo: java,
+    },
+    {
+      id: '6',
+      photo: firebase,
     }
   ];
 
@@ -64,7 +86,6 @@ const Example = () => {
           >
             <div
               style={{
-                background: 'linear-gradient(90deg,#ffa0ae 0%,#aacaef 75%)',
                 height: '50px',
                 width: '50px',
                 borderRadius: '50%',
@@ -76,7 +97,7 @@ const Example = () => {
                 fontSize: '38px',
               }}
             >
-              <img src={reply.photo} alt='language'/>
+              <img src={reply.photo} alt='language' className='skills-icon'/>
             </div>
           </motion.li>
         ))}
