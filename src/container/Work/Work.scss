@@ -1,7 +1,31 @@
-.skills-icon{
+.skills-icon {
     max-width: 30px;
 }
 
-.text{
+.textSkills {
     margin: 3.7rem;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 915px) {
+    .Cards {
+        display: flex;
+        justify-content: center;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+@media screen and (max-width: 760px) {
+    .textSkills{
+        font-size:2.2rem;
+    }
 }

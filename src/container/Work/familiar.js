@@ -5,6 +5,7 @@ import java from "../../assets/Java.png"
 import net from "../../assets/net.png"
 import sql from "../../assets/sql.png"
 import firebase from "../../assets/firebase.png"
+import typescript from "../../assets/typescript.svg"
 
 
 const Example = () => {
@@ -32,6 +33,10 @@ const Example = () => {
     {
       id: '6',
       photo: firebase,
+    },
+    {
+      id: '7',
+      photo: typescript,
     }
   ];
 

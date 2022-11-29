@@ -1,34 +1,103 @@
-.FormContact{
+.FormContact {
     display: flex;
     flex-direction: column;
 }
-.text{
+
+.text {
     margin: 3.7rem;
 }
-.FormContact{
+
+.FormContact {
     margin-bottom: 3.7rem;
     align-items: center;
-    
-    h2{
+
+    h2 {
         margin: 0.2rem;
     }
-    input{
+
+    input {
         height: 5rem;
         width: 35rem;
-        // border-color:#1f1f1f;
-        // border-radius: 25px;
-        border: none;
-        border-bottom: 5px solid red;
-        text-align: center;
-    }
-    textarea{
-        height: 10rem;
-        width: 35rem;
-        border-color:#1f1f1f;
+        border-color: #1f1f1f;
         border-radius: 25px;
         text-align: center;
+        font-size: 1.5rem;
+        font-family: "Tahoma", "Arial", "Arabic Transparent";
+    }
+
+    @media screen and (max-width: 915px) {
+        .input {
+            height: 5rem;
+            width: 25rem;
+        }
+        .submitting{
+            width: 25rem;
+        }
+        .textarea{
+            height: 10rem;
+            width: 25rem;
+        }
+        .contactButtons{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 854px) {
+        .input {
+            height: 5rem;
+            width: 20rem;
+        }
+        .submitting{
+            width: 20rem;
+        }
+        .textarea{
+            height: 10rem;
+            width: 20rem;
+        }
+    }
+
+    textarea {
+        height: 10rem;
+        width: 35rem;
+        border-color: #1f1f1f;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Tahoma", "Arial";
     }
 }
-.submitting{
+
+.submitting {
     margin-top: 1rem;
+}
+
+.app__footer-card {
+    min-width: 191px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border-color: #ff0f0f;
+    cursor: pointer;
+    color: #1f1f1f;
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 0 0.7rem;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    &:hover {
+        box-shadow: 0 0 25px #80ffff;
+    }
 }

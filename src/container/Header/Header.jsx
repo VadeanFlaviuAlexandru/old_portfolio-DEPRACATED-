@@ -27,9 +27,9 @@ export default class Header extends Component {
           </Box>
         </Box>
         <Box display={'flex'} justifyContent={'center'} marginBottom={'5%'}>
-          <div class="scroll-downs">
-            <div class="mousey">
-              <div class="scroller"></div>
+          <div className="scroll-downs">
+            <div className="mousey">
+              <div className="scroller"></div>
             </div>
           </div>
         </Box>

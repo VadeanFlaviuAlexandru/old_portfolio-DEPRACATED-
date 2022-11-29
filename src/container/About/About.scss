@@ -1,0 +1,33 @@
+.AboutBox{
+    margin-top: 5rem;
+}
+.aboutHeaderTitle{
+    margin-left: 15rem;
+    font-size: 3rem;
+}
+.aboutHeader{
+    margin-left: 10rem;
+    font-size: 2rem;
+}
+.photo{
+    margin-right: 10rem;
+}
+
+@media screen and (max-width: 915px) {
+    .aboutHeaderTitle{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+    .aboutHeader{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1.2rem;
+    }
+    .photo{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
