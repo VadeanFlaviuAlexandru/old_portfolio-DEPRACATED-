@@ -1,33 +1,48 @@
-.AboutBox{
+.AboutBox {
     margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.aboutHeaderTitle{
+
+.aboutHeaderTitle {
     margin-left: 15rem;
     font-size: 3rem;
 }
-.aboutHeader{
+
+.aboutHeader {
     margin-left: 10rem;
     font-size: 2rem;
 }
-.photo{
+
+.photo {
     margin-right: 10rem;
 }
 
 @media screen and (max-width: 915px) {
-    .aboutHeaderTitle{
+    .aboutHeaderTitle {
         margin-left: 1rem;
         margin-right: 1rem;
         font-size: 2rem;
     }
-    .aboutHeader{
+
+    .AboutBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutHeader {
         margin-left: 1rem;
         margin-right: 1rem;
         font-size: 1.2rem;
     }
-    .photo{
+
+    .photo {
         margin-top: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    }
+
+    .img {
+        margin-left: 5rem;
     }
 }

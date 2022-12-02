@@ -5,6 +5,7 @@ import css from "../../assets/css.png"
 import react from "../../assets/react.png"
 import sass from "../../assets/sass.png"
 import html from "../../assets/html.png"
+import mui from "../../assets/mui.png"
 
 const Example = () => {
   const replies = [
@@ -22,15 +23,19 @@ const Example = () => {
     },
     {
       id: '5',
-      photo: sass,
+      photo: react,
     },
     {
       id: '6',
-      photo: bootstrap,
+      photo: sass,
     },
     {
       id: '7',
-      photo: react,
+      photo: bootstrap,
+    },
+    {
+      id: '8',
+      photo: mui,
     }
   ];
 
@@ -94,8 +99,9 @@ const Example = () => {
                 cursor: 'pointer',
                 fontSize: '38px',
               }}
+              key={reply.id}
             >
-              <img src={reply.photo} alt='language' className='skills-icon'/>
+              <img src={reply.photo} alt='language' className='skills-icon' />
             </div>
           </motion.li>
         ))}

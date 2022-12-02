@@ -11,10 +11,18 @@
     display: flex;
     gap: 3rem;
   }
+
+  .site-nav {
+    padding: 0px 0 8px;
+    position: relative;
+    color: #1f1f1f;
+    background: none;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 760px) {
-  .nav{
+  .nav {
     font-size: 25px;
   }
 }
@@ -25,13 +33,6 @@
 
 .site-nav:visited {
   text-decoration: none;
-}
-
-.site-nav {
-  padding: 0px 0 8px;
-  position: relative;
-  color: #1f1f1f;
-
 }
 
 .site-nav::before {
@@ -52,6 +53,18 @@
   left: 43%;
   bottom: 15px;
   width: 135px;
+  height: 12px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgb(128, 255, 255);
+  z-index: -1;
+}
+
+.site-cv::before {
+  content: "";
+  position: absolute;
+  left: 43%;
+  bottom: 15px;
+  width: 80px;
   height: 12px;
   transform: skew(-12deg) translateX(-50%);
   background: rgb(128, 255, 255);

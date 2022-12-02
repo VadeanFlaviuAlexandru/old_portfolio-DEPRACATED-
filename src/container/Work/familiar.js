@@ -6,6 +6,7 @@ import net from "../../assets/net.png"
 import sql from "../../assets/sql.png"
 import firebase from "../../assets/firebase.png"
 import typescript from "../../assets/typescript.svg"
+import fmotion from "../../assets/motion.png"
 
 
 const Example = () => {
@@ -37,6 +38,10 @@ const Example = () => {
     {
       id: '7',
       photo: typescript,
+    },
+    {
+      id: '8',
+      photo: fmotion,
     }
   ];
 
