@@ -33,13 +33,13 @@ export const Contact = () => {
                         <h2 >E-mail</h2>
                     </div>
                 </a>
-                <a href="https://github.com/VadeanFlaviuAlexandru">
+                <a href="https://github.com/VadeanFlaviuAlexandru" target="_blank" rel="noreferrer">
                     <div className="app__footer-card ">
                         <img src={github} alt="github" />
                         <h2>GitHub</h2>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/alexvad/">
+                <a href="https://www.linkedin.com/in/alexvad/" target="_blank" rel="noreferrer">
                     <div className="app__footer-card ">
                         <img src={linkedin} alt="LinkedIn" />
                         <h2>LinkedIn</h2>

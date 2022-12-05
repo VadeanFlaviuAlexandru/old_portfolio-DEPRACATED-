@@ -37,18 +37,18 @@ const projects = [
     description: "A simple catalogue made in React to find movies, films and novels after an inputted keyword, using an API.",
     image: catalogue,
     github: 'https://github.com/VadeanFlaviuAlexandru/PersonalProjects_FictionCatalogue',
-    demo: 's'
+    demo: 'https://inspiring-zuccutto-76992f.netlify.app'
   },
   {
     name: "Calculator",
     description: "A simple working calculator made in React with a day and night theme button.",
     image: calculator,
     github: 'https://github.com/VadeanFlaviuAlexandru/PersonalProjects_Calculator',
-    demo: 's'
+    demo: 'https://heroic-starlight-a9bab8.netlify.app'
   },
   {
     name: "Portfolio",
-    description: "This very own portfolio! Was built from scratch with React and Material UI.",
+    description: "This very own portfolio! Was built from scratch with React, Material UI and Framer Motion!",
     image: portfolio,
     github: 'https://github.com/VadeanFlaviuAlexandru/portfolio',
     demo: 's'
