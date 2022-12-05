@@ -1,6 +1,6 @@
 import self from "../assets/Me.png"
 
-export let colors = ["rgb(128, 255, 255)","rgb(228, 185, 255)" ];
+export let colors = ["#b2aacf","#4791be" ];
 
 export const info = {
     firstName: "Alex",
@@ -19,5 +19,5 @@ export const info = {
             emoji: '🌎',
             text: 'Living in Romania'
         }
-    ]
+    ],
 }

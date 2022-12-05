@@ -2,18 +2,28 @@
 @import "./index.scss";
 
 body {
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.5vh;
-    width: 100%;
-    height: 100%;
-    color: $dark;
-    background-color: $white;
-    box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5vh;
+  width: 100%;
+  height: 100%;
+  color: #1f1f1f;
+  box-sizing: border-box;
 }
+
+body.light {
+  background-color: #e4e7e9;
+}
+
+body.dark {
+  color: #121b18;
+  background-color: #6a6a58;
+}
+
 
 h1 {
   font-size: 2rem;
   text-align: center;
+
   @media only screen and (min-width: 940px) {
     font-size: 3rem;
     text-align: left;
@@ -23,6 +33,7 @@ h1 {
 h2 {
   font-size: 1.25rem;
   text-align: center;
+
   @media only screen and (min-width: 940px) {
     font-size: 2rem;
     text-align: left;
@@ -30,13 +41,17 @@ h2 {
 }
 
 li {
-    color: $dark;
+  color: #1f1f1f;
+}
+
+li.dark {
+  color: #a58c6f;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a,
@@ -44,13 +59,13 @@ a:link,
 a:hover,
 a:visited,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }

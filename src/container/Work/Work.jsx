@@ -14,7 +14,7 @@ import rps from "../../assets/rps.png"
 import hero from "../../assets/hero.png"
 import Familiar from './familiar.js'
 import Proficient from './proficient.js'
-import { info } from "../../Components/info.js"
+import { info } from "../../Components/Info.js"
 import { motion } from "framer-motion";
 
 const projects = [

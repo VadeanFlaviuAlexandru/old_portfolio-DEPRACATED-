@@ -1,11 +1,21 @@
 .nav {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  align-self: center;
+  width: 70rem;
   font-size: 35px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  gap: 5rem;
+  gap: 30rem;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 
   .site-nav-list {
     display: flex;
@@ -43,7 +53,7 @@
   width: 120px;
   height: 12px;
   transform: skew(-12deg) translateX(-50%);
-  background: rgb(128, 255, 255);
+  background: #70a6cd;
   z-index: -1;
 }
 
@@ -55,7 +65,7 @@
   width: 135px;
   height: 12px;
   transform: skew(-12deg) translateX(-50%);
-  background: rgb(128, 255, 255);
+  background: #70a6cd;
   z-index: -1;
 }
 
@@ -67,6 +77,6 @@
   width: 80px;
   height: 12px;
   transform: skew(-12deg) translateX(-50%);
-  background: rgb(128, 255, 255);
+  background: #70a6cd;
   z-index: -1;
 }

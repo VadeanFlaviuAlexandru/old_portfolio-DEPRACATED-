@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Box } from "@mui/material";
-import { info } from "../../Components/info.js"
+import { info } from "../../Components/Info.js"
 import me from "../../assets/Me.png"
 import '../Header/Header.scss'
 import $ from 'jquery';
 import { motion } from "framer-motion";
- 
+
 
 $(window).bind("scroll", function () {
   if ($(this).scrollTop() > 100) {
@@ -32,7 +32,8 @@ export default class Header extends Component {
                   <Box component={'li'} key={index} fontSize={'1.7rem'} lineHeight={1.5} style={{ cursor: 'default' }}>
                     <Box component={'span'} aria-label="cheese"
                       role="img"
-                      mr={{ xs: '0.5rem', md: '1rem' }} fontSize={'2rem'}>{bio.emoji}</Box>
+                      mr={{ xs: '0.5rem', md: '1rem' }} fontSize={'2rem'}>{bio.emoji}
+                    </Box>
                     {bio.text}
                   </Box>
                 ))}
