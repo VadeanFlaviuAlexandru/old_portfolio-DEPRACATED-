@@ -21,7 +21,7 @@ export default class Header extends Component {
       <Box display={'flex'} flexDirection={'column'}>
         <Box component={'main'} display={'flex'} flexDirection={{ xs: 'column', md: 'row' }} alignItems={'center'} justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
           <Box component={motion.div} whileInView={{ x: [-100, 0], opacity: [0, 1] }} transition={{ duration: 0.5 }}>
-            <Box alt={'image of me'} style={{ background: info.gradient }} component={'img'} src={me} width={{ xs: '35vh', md: '40vh' }} height={{ xs: '35vh', md: '40vh' }} borderRadius={'50%'} p={'0.75rem'} mb={{ xs: '1rem', sm: 0 }} mr={{ xs: 0, md: '2rem' }} />
+            <Box alt={'image of me'} style={{ background: info.gradient }} component={'img'} src={me} width={{ xs: '35vh', md: '40vh' }} height={{ xs: '35vh', md: '40vh' }} borderRadius={'50%'} p={'0.35rem'} mb={{ xs: '1rem', sm: 0 }} mr={{ xs: 0, md: '2rem' }} />
           </Box>
           <Box>
             <Box component={motion.div} whileInView={{ x: [+100, 0], opacity: [0, 1] }} transition={{ duration: 0.5 }} >

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import { info } from "../../Components/Info.js"
@@ -9,9 +9,18 @@ import linkedin from "../../assets/linkedin.svg"
 import phone from "../../assets/phone.png"
 import { motion } from "framer-motion";
 
+
+const Result = () => {
+    return (
+        <Box className='ThankYouBox' sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <h2>Thanks for writing.</h2>
+            <h2>I'll try to respond as soon as possible!</h2>
+        </Box>
+    )
+}
 export const Contact = () => {
     const form = useRef();
-
+    const [result, setResult] = useState(false);
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -21,6 +30,9 @@ export const Contact = () => {
             }, (error) => {
                 console.log(error.text);
             });
+
+        e.target.reset();
+        setResult(true);
     };
 
     return (
@@ -55,13 +67,14 @@ export const Contact = () => {
             <Box component={motion.div} whileInView={{ y: [+100, 0], opacity: [0, 1] }} transition={{ duration: 0.5 }}>
                 <form ref={form} onSubmit={sendEmail} className="FormContact">
                     <h2>Name</h2>
-                    <input className='input' type="text" name="user_name" />
+                    <input className='input' type="text" name="user_name" required />
                     <h2>Email</h2>
-                    <input className='input' type="email" name="user_email" />
+                    <input className='input' type="email" name="user_email" required />
                     <h2>Message</h2>
-                    <textarea className='textarea' name="message" />
+                    <textarea className='textarea' name="message" required />
                     <input className='submitting' type="submit" value="Send" />
                 </form>
+                {result ? <Result /> : null}
             </Box>
         </Box>
     );

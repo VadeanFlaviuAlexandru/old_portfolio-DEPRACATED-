@@ -23,14 +23,14 @@ const projects = [
     description: "A local Rock Paper Scissors game in JavaScript with client-side leaderboard.",
     image: rps,
     github: 'https://github.com/VadeanFlaviuAlexandru/PersonalProjects_RockPaperScissors',
-    demo: 's'
+    demo: 'https://vocal-cannoli-2f144d.netlify.app'
   },
   {
     name: "Hero Association",
     description: "C.R.U.D. of a Hero Database made in Angular, including a reactive form, in-memory web API and services.",
     image: hero,
     github: 'https://github.com/VadeanFlaviuAlexandru/PersonalProjects_HeroAssociation',
-    demo: 's'
+    demo: 'https://extraordinary-puppy-9e57b9.netlify.app'
   },
   {
     name: "Fiction Catalogue",

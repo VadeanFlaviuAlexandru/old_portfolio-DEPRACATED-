@@ -4,20 +4,31 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
 
-.aboutHeaderTitle {
-    margin-left: 15rem;
-    font-size: 3rem;
-}
+    .About{
+        padding: 5vh;
+        margin-right: 10vh;
+    }
 
-.aboutHeader {
-    margin-left: 10rem;
-    font-size: 2rem;
-}
+    .aboutHeaderTitle {
+        padding-left: 3vh;
+        font-size: 3.5rem;
+    }
 
-.photo {
-    margin-right: 10rem;
+    .break{
+        padding-top: 3vh;
+    }
+    .aboutHeader {
+        // padding: 10rem;
+        font-size: 2rem;
+    }
+
+    .photo {
+        margin-left: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 915px) {
