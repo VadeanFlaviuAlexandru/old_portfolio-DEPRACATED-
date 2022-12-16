@@ -71,7 +71,7 @@ export default class Work extends Component {
           <Grid container justifyContent="center">
             {projects.map((project, i) => (
               <Grid className="Cards" margin="1%" item xs={12} sm={8} md={2} key={i}>
-                <Card sx={{ maxWidth: 330 }} >
+                <Card className="Card" sx={{ maxWidth: 330 }} >
                   <CardMedia
                     component="img"
                     height="150"

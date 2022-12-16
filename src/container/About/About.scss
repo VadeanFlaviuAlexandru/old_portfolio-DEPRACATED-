@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
 
-    .About{
+    .About {
         padding: 5vh;
         margin-right: 10vh;
     }
@@ -15,45 +15,44 @@
         font-size: 3.5rem;
     }
 
-    .break{
+    .break {
         padding-top: 3vh;
     }
+
     .aboutHeader {
-        // padding: 10rem;
         font-size: 2rem;
     }
 
     .photo {
         margin-left: 10rem;
+        max-width: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 1800px){
+            margin-left: 0;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .AboutBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    .photo{
+        margin-left: 0rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-}
-
-@media screen and (max-width: 915px) {
-    .aboutHeaderTitle {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        font-size: 2rem;
+    .aboutHeader{
+        text-align: center;
     }
-
-    .AboutBox {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .aboutHeader {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        font-size: 1.2rem;
-    }
-
-    .photo {
-        margin-top: 1rem;
-    }
-
-    .img {
-        margin-left: 5rem;
+    .aboutHeaderTitle{
+        text-align: center;
     }
 }

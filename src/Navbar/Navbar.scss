@@ -31,12 +31,17 @@
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1150px) {
   .nav {
-    font-size: 25px;
+    width: 100%;
+    font-size: 2.8vh;
+    gap: 1vh;
+
+    .site-nav-list {
+      gap: 3vh;
+    }
   }
 }
-
 .site-nav:active {
   color: #FFBD2E;
 }
@@ -55,6 +60,10 @@
   transform: skew(-12deg) translateX(-50%);
   background: #70a6cd;
   z-index: -1;
+
+  @media screen and (max-width: 1150px) {
+    width: 7vh;
+  }
 }
 
 .site-contact::before {
@@ -67,6 +76,10 @@
   transform: skew(-12deg) translateX(-50%);
   background: #70a6cd;
   z-index: -1;
+
+  @media screen and (max-width: 1150px) {
+    width: 8vh;
+  }
 }
 
 .site-cv::before {
@@ -79,4 +92,8 @@
   transform: skew(-12deg) translateX(-50%);
   background: #70a6cd;
   z-index: -1;
+
+  @media screen and (max-width: 1150px) {
+    width: 3vh;
+  }
 }

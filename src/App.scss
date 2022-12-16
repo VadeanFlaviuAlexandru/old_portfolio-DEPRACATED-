@@ -19,6 +19,11 @@ body.dark {
   background-color: #6a6a58;
 }
 
+@media only screen and (max-width: 950px) {
+  html,body{
+    overflow-x: hidden;
+  }
+}
 
 h1 {
   font-size: 2rem;
