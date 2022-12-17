@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Box } from "@mui/material";
-import { info } from "../../Components/Info.js"
+import { info } from "../../Components/info.js"
 import '../About/About.scss'
-import Me2 from "../../assets/Me2.jpg"
 import Me22 from "../../assets/Me22.jpg"
 
 import { motion } from "framer-motion";

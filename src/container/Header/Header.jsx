@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Box } from "@mui/material";
-import { info } from "../../Components/Info.js"
+import { info } from "../../Components/info.js"
 import me from "../../assets/Me.png"
 import '../Header/Header.scss'
 import $ from 'jquery';

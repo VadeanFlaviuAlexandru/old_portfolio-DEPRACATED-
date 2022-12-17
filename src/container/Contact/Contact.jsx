@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
-import { info } from "../../Components/Info.js"
+import { info } from "../../Components/info.js"
 import './Contact.scss'
 import email from "../../assets/email.png"
 import github from "../../assets/github.png"
