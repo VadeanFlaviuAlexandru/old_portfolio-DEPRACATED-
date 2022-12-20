@@ -21,6 +21,7 @@
 
     .aboutHeader {
         font-size: 2rem;
+
     }
 
     .photo {
@@ -29,30 +30,77 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @media screen and (max-width: 1800px){
-            margin-left: 0;
-
-        }
     }
 }
 
+
 @media screen and (max-width: 1800px) {
+    .About {
+        margin-right: 0rem !important;
+    }
+
     .AboutBox {
         display: flex;
         flex-direction: column;
         justify-content: center;
         justify-items: center;
     }
-    .photo{
-        margin-left: 0rem;
+
+    .photo {
+        margin-left: 0rem !important;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .aboutHeader{
+
+    .aboutHeader {
         text-align: center;
     }
-    .aboutHeaderTitle{
+
+    .aboutHeaderTitle {
+        padding-left: 0rem !important;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .About {
+        margin-right: 0rem !important;
+    }
+
+    .photo {
+        padding-left: 0rem !important;
+    }
+
+    .aboutHeader {
+        text-align: center;
+        font-size: 1.3rem !important;
+
+    }
+
+    .aboutHeaderTitle {
+        margin-left: 0rem !important;
+        font-size: 2.5rem !important;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .About {
+        margin-right: 0rem !important;
+    }
+
+    .photo {
+        padding-left: 0rem !important;
+    }
+
+    .aboutHeader {
+        text-align: center;
+        font-size: 1.1rem !important;
+
+    }
+
+    .aboutHeaderTitle {
+        margin-left: 0rem !important;
+        font-size: 2.4rem !important;
     }
 }

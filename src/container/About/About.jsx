@@ -18,8 +18,8 @@ export default class About extends Component {
                 </Box>
                 <Box className='About'>
                     <h1 className='aboutHeaderTitle'>A little <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>about me</span>✨</h1>
-                    <h2 className='aboutHeader'>I'm currently <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>studying computer science and mathematics at babes bolyay university</span>, while learning to be a better developer and self. I always intend to catch people's eye with my work, by combining <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>my passions: art and technology</span>.</h2>
-                    <h2 className='aboutHeader break'>When I'm not burdened by homework or building any personal projects, I might be out with some friends 🏙️, failing at basketball 🏀, playing the ukulele 🎸 or learning to do skate tricks 🛹. Maybe also watch a show in between 🍿. </h2>
+                    <h2 className='aboutHeader'>I'm currently <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>studying computer science and mathematics at Babes-Bolyai University</span>, while learning to be a better developer and self. I always intend to catch people's eye with my work, by combining <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>my passions: art and technology</span>.</h2>
+                    <h2 className='aboutHeader break'>When I'm not burdened by homework or building any personal projects, I might be out with some friends, failing at basketball, playing the ukulele or learning to do skate tricks. Maybe also watch a show in between. </h2>
                 </Box>
             </Box>
         )

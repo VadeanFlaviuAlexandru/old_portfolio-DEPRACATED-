@@ -6,6 +6,7 @@
 .text {
     margin: 3.7rem;
 }
+
 .ThankYouBox {
     margin-bottom: 2rem;
 }
@@ -33,27 +34,33 @@
             height: 5rem;
             width: 25rem;
         }
-        .submitting{
+
+        .submitting {
             width: 25rem;
         }
-        .textarea{
+
+        .textarea {
             height: 10rem;
             width: 25rem;
         }
-        .contactButtons{
+
+        .contactButtons {
             display: flex;
             flex-direction: column;
         }
     }
+
     @media screen and (max-width: 854px) {
         .input {
             height: 5rem;
             width: 20rem;
         }
-        .submitting{
+
+        .submitting {
             width: 20rem;
         }
-        .textarea{
+
+        .textarea {
             height: 10rem;
             width: 20rem;
         }
@@ -74,36 +81,47 @@
     margin-top: 1rem;
 }
 
-.app__footer-card {
-    min-width: 191px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.ContactBox {
+    gap: 25px;
 
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #1f1f1f;
+    .app__footer-card {
+        min-width: 191px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #ffffff85;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #1f1f1f;
 
-    img {
-        width: 40px;
-        height: 40px;
-        margin: 0 0.7rem;
-        text-decoration: none;
+        img {
+            width: 40px;
+            height: 40px;
+            margin: 0 0.7rem;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        &:hover {
+            box-shadow: 0 8px 32px 0 #4790be75;
+        }
+
+        @media only screen and (max-width: 384px) {
+            min-width: 174px;
+        }
+
     }
+}
 
-    a {
-        text-decoration: none;
-        font-weight: 500;
+.dark {
+    .app__footer-card {
+        color: #ffffff;
     }
-
-    &:hover {
-        box-shadow: 0 0 25px #988db9;
-    }
-    @media only screen and (max-width: 384px){
-        min-width: 174px;
-    }
-
 }

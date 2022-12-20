@@ -1,119 +1,43 @@
-import { motion } from 'framer-motion';
-import angular from "../../assets/angular.png"
-import php from "../../assets/php.png"
-import java from "../../assets/Java.png"
-import net from "../../assets/net.png"
-import sql from "../../assets/sql.png"
-import firebase from "../../assets/firebase.png"
+import './Work.scss'
+import csharp from "../../assets/csharp.png"
+import javai from "../../assets/Java.png"
 import typescript from "../../assets/typescript.svg"
-import fmotion from "../../assets/motion.png"
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
 
-
-const Example = () => {
-  const replies = [
-    {
-      id: '1',
-      photo: angular,
-    },
-    {
-      id: '2',
-      photo: php,
-    },
-    {
-      id: '3',
-      photo: net,
-    },
-    {
-      id: '4',
-      photo: sql,
-    },
-    {
-      id: '5',
-      photo: java,
-    },
-    {
-      id: '6',
-      photo: firebase,
-    },
-    {
-      id: '7',
-      photo: typescript,
-    },
-    {
-      id: '8',
-      photo: fmotion,
-    }
-  ];
-
-  const list = {
-    visible: {
-      opacity: 1,
-      transition: {
-        // delayChildren: 1.5,
-        staggerChildren: 0.1,
-      },
-    },
-    hidden: {
-      opacity: 0,
-    },
-  };
-
-  const item = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -10 },
-  };
-
+const familiar = () => {
   return (
-    <>
-      {/* <h4>Already {replies.length} furry friends liked this post!</h4> */}
-      <motion.ul
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          marginLeft: '0px',
-          marginBottom: '8px',
-          marginTop: '15px',
-          paddingLeft: '0px',
-        }}
-        initial="hidden"
-        animate="visible"
-        variants={list}
-      >
-        {replies.map((reply) => (
-          <motion.li
-            style={{
-              listStyle: 'none',
-              marginRight: '-10px',
-            }}
-            key={reply.id}
-            data-testid={reply.id}
-            variants={item}
-            whileHover={{
-              // scale: 1.2,
-              marginRight: '5px',
-              transition: { ease: 'easeOut' },
-            }}
-          >
-            <div
-              style={{
-                height: '50px',
-                width: '50px',
-                borderRadius: '50%',
-                border: '3px solid #4C79DF',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-                fontSize: '38px',
-              }}
-            >
-              <img src={reply.photo} alt='language' className='skills-icon'/>
-            </div>
-          </motion.li>
-        ))}
-      </motion.ul>
-    </>
+    <List sx={{ width: '100%', maxWidth: 150, bgcolor: 'background.paper' }} className='ListBackground'>
+      <ListItem className='ListBackground'>
+        <ListItemAvatar>
+          <Avatar className='ImageBackground'>
+            <img src={javai} alt={'language icon'}  className="image" />
+          </Avatar>
+        </ListItemAvatar>
+        <ListItemText primary="Java"/>
+      </ListItem>
+      <ListItem>
+        <ListItemAvatar>
+          <Avatar className='ImageBackground'>
+            <img src={csharp} alt={'language icon'} className="image" />
+          </Avatar>
+        </ListItemAvatar>
+        <ListItemText primary="C#"/>
+      </ListItem>
+      
+      <ListItem>
+        <ListItemAvatar>
+          <Avatar className='ImageBackground'>
+            <img src={typescript} alt={'language icon'} className="image" />
+          </Avatar>
+        </ListItemAvatar>
+        <ListItemText primary="TypeScript"/>
+      </ListItem>
+    </List>
   );
 };
 
-export default Example;
+export default familiar;

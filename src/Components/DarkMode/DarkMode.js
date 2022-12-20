@@ -3,7 +3,7 @@ import './DarkMode.scss';
 
 const DarkMode = () => {
     let clickedClass = "clicked";
-    const body = document.body ;
+    const body = document.body;
     const lightTheme = "light";
     const darkTheme = "dark";
     let theme;
@@ -37,7 +37,7 @@ const DarkMode = () => {
             className={theme === "dark" ? clickedClass : ""}
             id="darkMode"
             onClick={(e) => switchTheme(e)}
-        ></button>
+        />
     );
 };
 

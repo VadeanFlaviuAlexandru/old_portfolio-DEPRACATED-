@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 @import "./index.scss";
+@import "./Navbar/Navbar.scss";
+@import "./container/Work/Work.scss";
+@import "./container/Header/Header.scss";
+@import "./container/Contact/Contact.scss";
 
 body {
   font-family: 'Indie Flower', cursive;
@@ -8,49 +13,30 @@ body {
   height: 100%;
   color: #1f1f1f;
   box-sizing: border-box;
-}
 
-body.light {
-  background-color: #e4e7e9;
-}
-
-body.dark {
-  color: #121b18;
-  background-color: #6a6a58;
-}
-
-@media only screen and (max-width: 950px) {
-  html,body{
-    overflow-x: hidden;
+  li {
+    color: #1f1f1f;
   }
-}
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-
-  @media only screen and (min-width: 940px) {
-    font-size: 3rem;
-    text-align: left;
-  }
-}
-
-h2 {
-  font-size: 1.25rem;
-  text-align: center;
-
-  @media only screen and (min-width: 940px) {
+  h1 {
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
+
+    @media only screen and (min-width: 940px) {
+      font-size: 3rem;
+      text-align: left;
+    }
   }
-}
 
-li {
-  color: #1f1f1f;
-}
+  h2 {
+    font-size: 1.25rem;
+    text-align: center;
 
-li.dark {
-  color: #a58c6f;
+    @media only screen and (min-width: 940px) {
+      font-size: 2rem;
+      text-align: left;
+    }
+  }
 }
 
 * {
@@ -73,4 +59,25 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+body.light {
+  background-color: #ffffff;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+
+  li {
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }

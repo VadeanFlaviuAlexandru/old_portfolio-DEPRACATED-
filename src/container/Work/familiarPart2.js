@@ -1,51 +1,52 @@
 import './Work.scss'
-import bootstrap from "../../assets/bootstrap.png"
-import css from "../../assets/css.png"
-import sass from "../../assets/sass.png"
-import mui from "../../assets/mui.png"
+import php from "../../assets/php.png"
+import net from "../../assets/net.png"
+import fmotion from "../../assets/motion.png"
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
+import React from 'react';
+import sql from "../../assets/sql.png"
 
-const proficient = () => {
+const familiar = () => {
   return (
-    <List sx={{ width: '100%', minWidth: 150, bgcolor: 'background.paper' }} className='ListBackground'>
+    <List sx={{ width: '100%', maxWidth: 200, bgcolor: 'background.paper' }} className='ListBackground'>
       <ListItem className='ListBackground'>
-        <ListItemAvatar>
+        <ListItemAvatar >
           <Avatar className='ImageBackground'>
-            <img src={css} alt={'language icon'} className="image" />
+            <img src={php} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="CSS" />
+        <ListItemText primary="PHP"/>
       </ListItem>
       <ListItem>
         <ListItemAvatar>
           <Avatar className='ImageBackground'>
-            <img src={bootstrap} alt={'language icon'} className="image" />
+            <img src={net} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Bootstrap" />
+        <ListItemText primary=".NET"/>
       </ListItem>
       <ListItem>
         <ListItemAvatar>
           <Avatar className='ImageBackground'>
-            <img src={sass} alt={'language icon'} className="image" />
+            <img src={sql} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Sass" />
+        <ListItemText primary="SSMS"/>
       </ListItem>
-      <ListItem className='ListBackground'>
+      <ListItem>
         <ListItemAvatar>
           <Avatar className='ImageBackground'>
-            <img src={mui} alt={'language icon'} className="image" />
+            <img src={fmotion} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Material-UI" />
+        <ListItemText primary="FramerMotion"/>
       </ListItem>
     </List>
   );
 };
 
-export default proficient;
+export default familiar;

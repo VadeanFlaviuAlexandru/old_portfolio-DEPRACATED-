@@ -1,8 +1,8 @@
 import './Work.scss'
-import bootstrap from "../../assets/bootstrap.png"
-import css from "../../assets/css.png"
-import sass from "../../assets/sass.png"
-import mui from "../../assets/mui.png"
+import js from "../../assets/javascript.png"
+import react from "../../assets/react.png"
+import angular from "../../assets/angular.png"
+import html from "../../assets/html.png"
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
@@ -11,38 +11,38 @@ import Avatar from '@mui/material/Avatar';
 
 const proficient = () => {
   return (
-    <List sx={{ width: '100%', minWidth: 150, bgcolor: 'background.paper' }} className='ListBackground'>
+    <List sx={{ width: '100%', minWidth: 200 }} className='ListBackground'>
       <ListItem className='ListBackground'>
         <ListItemAvatar>
           <Avatar className='ImageBackground'>
-            <img src={css} alt={'language icon'} className="image" />
+            <img src={html} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="CSS" />
+        <ListItemText primary="HTML" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
           <Avatar className='ImageBackground'>
-            <img src={bootstrap} alt={'language icon'} className="image" />
+            <img src={js} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Bootstrap" />
+        <ListItemText primary="JavaScript" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
           <Avatar className='ImageBackground'>
-            <img src={sass} alt={'language icon'} className="image" />
+            <img src={react} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Sass" />
+        <ListItemText primary="React" />
       </ListItem>
-      <ListItem className='ListBackground'>
+      <ListItem>
         <ListItemAvatar>
           <Avatar className='ImageBackground'>
-            <img src={mui} alt={'language icon'} className="image" />
+            <img src={angular} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Material-UI" />
+        <ListItemText primary="Angular" />
       </ListItem>
     </List>
   );

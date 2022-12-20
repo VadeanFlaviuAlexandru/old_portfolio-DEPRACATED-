@@ -29,7 +29,7 @@ export default class Header extends Component {
               <h2>{info.position}</h2>
               <Box component={'ul'} p={'0.8rem'}>
                 {info.miniBio.map((bio, index) => (
-                  <Box component={'li'} key={index} fontSize={'1.7rem'} lineHeight={1.5} style={{ cursor: 'default' }}>
+                  <Box component={'li'} key={index} fontSize={'1.7rem'} lineHeight={1.5} style={{ cursor: 'default', colorScheme: 'light' }}>
                     <Box component={'span'} aria-label="cheese"
                       role="img"
                       mr={{ xs: '0.5rem', md: '1rem' }} fontSize={'2rem'}>{bio.emoji}

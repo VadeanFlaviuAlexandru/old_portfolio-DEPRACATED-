@@ -9,9 +9,86 @@
         font-size: 2.2rem;
     }
 }
+.column{
+    display: flex;
+    flex-direction: row;
+}
+.light {
+    .CardContet {
+        text-align: center;
+        justify-content: center;
+        min-height: 50px;
+    }
+
+    .CardContetText {
+        text-align: center;
+    }
+
+    .CardContetButton {
+        border: 1px solid #ffffff85;
+        font-size: small;
+    }
+
+    .CardContetActions {
+        justify-content: center;
+    }
+
+    .CardContetText {
+        text-align: center;
+    }
+    .ImageBackground{
+        background: none;
+    }
+}
+
+.dark {
+    .Card {
+        border: 1px solid #ffffff85;
+        background-color: #06466d;
+    }
+
+    .CardContet {
+        background-color: #06466d;
+        text-align: center;
+        justify-content: center;
+        color: #ffffff;
+        min-height: 40px;
+        
+    }
+
+    .CardContetActions {
+        background-color: #06466d;
+        justify-content: center;
+    }
+
+    .CardContetText {
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .CardContetButton {
+        border: 1px solid #ffffff85;
+        color: #ffffff;
+        font-size: small;
+    }
+
+    .ListBackground {
+        background-color: rgb(0, 0, 0);
+    }
+    .ImageBackground{
+        background: none;
+    }
+    .image{
+        margin-top: 4px;
+        width: 30px;
+        height: 30px;
+    }
+}
 
 .WorkText {
-    margin: 1.3rem;
+
+    text-align: center;
+    margin: 0.8rem;
 
     @media screen and (max-width: 413px) {
         margin-top: 6rem;
@@ -21,8 +98,9 @@
         margin: 0;
         margin-top: 6rem;
     }
-    @media screen and (min-width: 414px){
-        margin-top: 6rem;
+
+    @media screen and (min-width: 414px) {
+        margin-top: 2rem;
 
     }
 
@@ -53,4 +131,14 @@
     .textSkills {
         font-size: 2.2rem;
     }
+}
+
+.ListBackground {
+    background-color: rgb(255, 255, 255);
+}
+
+.image{
+    margin-top: 4px;
+    width: 30px;
+    height: 30px;
 }
