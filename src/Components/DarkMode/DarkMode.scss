@@ -22,6 +22,11 @@
   transition: opacity 0.5s ease;
   opacity: 1;
   filter: invert(1);
+  
+  @media screen and (max-width: 1150px) {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 #darkMode:hover {
