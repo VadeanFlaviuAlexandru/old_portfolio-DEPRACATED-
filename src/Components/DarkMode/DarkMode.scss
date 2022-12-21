@@ -11,6 +11,10 @@
     width: 45px;
     height: 45px;
   }
+  @media screen and (max-width: 413px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 #darkMode.clicked {
@@ -26,6 +30,10 @@
   @media screen and (max-width: 1150px) {
     width: 45px;
     height: 45px;
+  }
+  @media screen and (max-width: 413px) {
+    width: 34px;
+    height: 40px;
   }
 }
 

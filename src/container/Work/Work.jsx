@@ -91,7 +91,7 @@ export default class Work extends Component {
           <Box sx={{ display: 'flex', flexDirection: 'column', width: '600px', justifyContent: "center", alignItems: 'center', alignContent: 'center', textAlign: 'center' }}
             component={motion.div} whileInView={{ x: [-100, 0], opacity: [0, 1] }} transition={{ duration: 0.5 }}
           >
-            <h1 className='textSkills'>What I'm <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>experienced</span> with</h1>
+            <h1 className='textSkills'>What I'm <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>proficient</span> with</h1>
             <Box className='column'>
               <Proficient2 />
               <Proficient />
