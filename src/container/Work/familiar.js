@@ -1,7 +1,7 @@
 import './Work.scss'
 import csharp from "../../assets/csharp.png"
 import javai from "../../assets/Java.png"
-import typescript from "../../assets/typescript.svg"
+import Git from "../../assets/git.png"
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
@@ -31,10 +31,10 @@ const familiar = () => {
       <ListItem>
         <ListItemAvatar>
           <Avatar className='ImageBackground'>
-            <img src={typescript} alt={'language icon'} className="image" />
+            <img src={Git} alt={'language icon'} className="image" />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="TypeScript"/>
+        <ListItemText primary="Git"/>
       </ListItem>
     </List>
   );
