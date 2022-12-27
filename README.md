@@ -14,6 +14,7 @@
 
 * <a href="https://portfoliovadean.netlify.app" target="_blank">Live Demo</a>
 * React portfolio from scratch, inspired by UI/UX designs.
+* Made with Material UI.
 * It's responsive.
 * For the contact section, I used EmailJS.
 * Animations are done with Framer Motion.
