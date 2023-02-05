@@ -25,7 +25,7 @@ const projects = [
     description:
       "A local Rock Paper Scissors game in JavaScript with client-side leaderboard. You can play it alone or with a friend.",
     image: rps,
-    GitAvailable: true,
+    DemoAvailable: true,
     github:
       "https://github.com/VadeanFlaviuAlexandru/PersonalProjects_RockPaperScissors",
     demo: "https://therockthepapertheschissors.netlify.app",
@@ -35,7 +35,7 @@ const projects = [
     description:
       "C.R.U.D. of a Hero Database made in Angular, including a reactive form, in-memory web API and services. ",
     image: hero,
-    GitAvailable: true,
+    DemoAvailable: true,
     github:
       "https://github.com/VadeanFlaviuAlexandru/PersonalProjects_HeroAssociation",
     demo: "https://herodatabase.netlify.app",
@@ -45,7 +45,7 @@ const projects = [
     description:
       "A simple catalogue made in React to find movies, films and novels after an inputted keyword, using an API.",
     image: catalogue,
-    GitAvailable: true,
+    DemoAvailable: true,
     github:
       "https://github.com/VadeanFlaviuAlexandru/PersonalProjects_FictionCatalogue",
     demo: "https://fictioncatalogue.netlify.app",
@@ -55,7 +55,7 @@ const projects = [
     description:
       "A simple yet functional working calculator made in React, featuring a convenient day and night theme toggle button.",
     image: calculator,
-    GitAvailable: true,
+    DemoAvailable: true,
     github:
       "https://github.com/VadeanFlaviuAlexandru/PersonalProjects_Calculator",
     demo: "https://prettysimplecalculator.netlify.app",
@@ -65,10 +65,9 @@ const projects = [
     description:
       "A group project allowing professors the possibility to organize tea meetings to get to know each other.",
     image: TeaWithColleagues,
-    GitAvailable: false,
-    github:
-      "",
-    demo: "https://github.com/VadeanFlaviuAlexandru/TeaWithColleagues",
+    DemoAvailable: false,
+    github: "https://github.com/VadeanFlaviuAlexandru/TeaWithColleagues",
+    demo: "",
   },
 ];
 
@@ -147,16 +146,6 @@ export default class Work extends Component {
                   </CardContent>
                   <CardActions className="CardContetActions">
                     <Button
-                      title="Demo"
-                      className="CardContetButton"
-                      size="small"
-                      href={project.demo}
-                      target="_blank"
-                    >
-                      Demo
-                    </Button>
-                    {project.GitAvailable ? (
-                    <Button
                       title="Github"
                       className="CardContetButton"
                       size="small"
@@ -165,7 +154,17 @@ export default class Work extends Component {
                     >
                       Github
                     </Button>
-                    ) : ( 
+                    {project.DemoAvailable ? (
+                      <Button
+                        title="Demo"
+                        className="CardContetButton"
+                        size="small"
+                        href={project.demo}
+                        target="_blank"
+                      >
+                        Demo
+                      </Button>
+                    ) : (
                       ""
                     )}
                   </CardActions>
