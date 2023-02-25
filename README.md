@@ -12,7 +12,7 @@
 
 ## Key Features
 
-* <a href="https://portfoliovadean.netlify.app" target="_blank">Check it out here!</a>
+* <a href="https://portfoliovadean.netlify.app" target="_blank">Check it out !</a>
 * React portfolio from scratch, inspired by UI/UX designs.
 * Made with Material UI.
 * It's responsive.
